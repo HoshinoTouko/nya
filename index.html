@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Nya短链</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!--Import Google Icon Font-->
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+</head>
+
+<body>
+
+<nav class="deep-orange" role="navigation">
+    <div class="nav-wrapper container">
+        <a id="logo-container" href="#" class="brand-logo">nya 短链</a>
+        <ul class="right hide-on-med-and-down">
+            <li><a href="">Home</a></li>
+        </ul>
+        <ul id="nav-mobile" class="side-nav">
+            <li><a href="">Home</a></li>
+        </ul>
+        <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+    </div>
+</nav>
+
+<div id="index-banner" class="container">
+    <div class="section no-pad-bot">
+        <div class="container">
+            <br><br><br><br>
+            <div class="row">
+                <form id="submit_info" class="col s12">
+                    <div class="col s12 m6 input-field left-align">
+                        <input id="source_url" type="text" class="validate">
+                        <label for="source_url">原URL</label>
+                    </div>
+                    <div class="col s12 m6 input-field left-align">
+                        <input disabled id="customize_short_url" type="text" class="invalid">
+                        <label for="customize_short_url">自定义URL</label>
+                    </div>
+                    <div class="col s12 left-align">
+                        <p id="shortenLink" class="btn-large orange waves-effect waves-light col s12">
+                            提交<i class="material-icons right">send</i>
+                        </p>
+                    </div>
+                </form>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col s12 m6 l3 offset-l3">
+                    <h5 class="hide" id="source_url_title">原链接</h5>
+                    <p class="hide" id="source_url_label"></p>
+                </div>
+                <div class="col s12 m6 l3">
+                    <h5 class="hide" id="shortened_url_title">生成的链接</h5>
+                    <p class="hide" id="shortened_url_label"></p>
+                    <button id="btn-cp" class="btn waves-effect waves-light orange btn-cp hide" data-clipboard-target="#shortened_url_label">
+                        Copy!
+                    </button>
+                </div>
+
+                <!-- Debug -->
+                <div class="col s12 hide" id="debugInfo">
+                    <div class="col s6 l3 offset-l3">
+                        <h5>添加时间</h5>
+                        <p id="current_time_label"></p>
+                    </div>
+                    <div class="col s6 l3">
+                        <h5>来源</h5>
+                        <p id="source_IP_label"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<br><br>
+
+<footer class="page-footer deep-orange">
+    <div class="container">
+        <div class="row">
+            <div class="col s12 m6">
+                <h5 class="white-text">介绍</h5>
+                <p class="grey-text text-lighten-4">nya短链（前身 nyan.work）</p>
+            </div>
+            <div class="col s12 m4 offset-m2">
+                <h5 class="white-text">更多</h5>
+                <ul>
+                    <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
+                    <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
+                    <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
+                    <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="footer-copyright">
+        <div class="container">
+            © 2015 - 2016 Copyright JuiceFactory
+        </div>
+    </div>
+</footer>
+
+
+<script type="text/javascript" src="js/jquery-2.2.4.min.js"></script>
+<script type="text/javascript" src="js/materialize.min.js"></script>
+<script type="text/javascript" src="js/init.js"></script>
+<script type="text/javascript" src="js/clipboard.min.js"></script>
+
+<script>
+
+</script>
+</body>
+</html>
